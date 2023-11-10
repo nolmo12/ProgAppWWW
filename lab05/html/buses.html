@@ -1,0 +1,26 @@
+
+<nav>
+    <ul>
+    <li><a href="index.php?idp=main">Strona Główna</a></li>
+    <li><a href="index.php?idp=bus" class="active">Autobusy</a></li>
+    <li><a href="index.php?idp=tram">Tramwaje</a></li>
+    <li><a href="index.php?idp=train">Pociągi</a></li>
+    <li><a href="index.php?idp=subway">Metro</a></li>
+    <li><a href="index.php?idp=contact">Kontakt</a></li>
+    <li><a href="index.php?idp=add_vehicle">Dodaj Pojazd</a></li>
+    <li><a href="index.php?idp=movies">Filmy</a></li>
+    </ul>
+</nav>
+<main>
+
+                    <h1>Galeria Autobusów / Trolejbusów</h1>
+                    <div id="info" class="hidden">
+                    </div>
+                    <div class="gallery">
+                        <?php
+                        $vehicles = Vehicle::getAllVehiclesOfSameType("Bus");
+                        printGallery($vehicles);
+                        unset($vehicles);
+                        ?>
+                    </div>
+                    </main>
