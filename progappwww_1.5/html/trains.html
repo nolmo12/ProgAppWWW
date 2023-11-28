@@ -1,0 +1,12 @@
+<main>
+    <h1>Galeria Pociągów</h1>
+    <div id="info" class="hidden">
+    </div>
+    <div class="gallery">
+    <?php
+        $vehicles = Vehicle::getAllVehiclesOfSameType("Train");
+        printGallery($vehicles);
+        unset($vehicles);
+        ?>
+    </div>
+</main>
