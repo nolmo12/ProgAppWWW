@@ -1,0 +1,38 @@
+
+                    <form action="" method="POST">
+                    <label for="typ">Typ:</label>
+                    <select name="typ" id="typ" required>
+                        <option value="Bus">Bus</option>
+                        <option value="Tram">Tram</option>
+                        <option value="Metro">Metro</option>
+                        <option value="Train">Train</option>
+                    </select>
+                    <?php
+                        if ($_SERVER["REQUEST_METHOD"] == "POST")
+                        {
+                            $description = $_POST["description"];
+                            $description = str_replace(['"', '+'], '', $description);
+                            Vehicle::insertVehicle($_POST["typ"], $_POST["name"], $_POST["countryOfOrigin"], $_POST["productionYear"],
+                             $_POST["engineType"], $description, $_POST["city"]);
+                        }
+                    ?>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required><br><br>
+
+                    <label for="countryOfOrigin">Country of Origin:</label>
+                    <input type="text" name="countryOfOrigin" id="countryOfOrigin" required><br><br>
+
+                    <label for="productionYear">Production Year:</label>
+                    <input type="number" name="productionYear" id="productionYear" required><br><br>
+
+                    <label for="engineType">Engine Type:</label>
+                    <input type="text" name="engineType" id="engineType" required><br><br>
+
+                    <label for="description">Description:</label>
+                    <textarea name="description" id="description" required></textarea><br><br>
+
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city" required><br><br>
+
+                    <input type="submit" value="Add Vehicle">
+                    </form>
