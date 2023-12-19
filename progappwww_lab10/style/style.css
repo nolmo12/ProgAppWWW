@@ -1,0 +1,238 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:Monaco;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #715aff;
+  }
+  
+nav  li {
+    float: left;
+  }
+  
+nav  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+nav  li a:hover {
+    background-color: #a682ff;
+  }
+
+main
+  {
+    color:white;
+    font-size:125%;
+    padding:2%;
+    background-color: rgba(88, 135, 255, 0.9);
+    font-family: tahoma;
+  }
+main h1
+{
+  margin-top:2.5%;
+    font-family: tahoma;
+    text-align: center;
+}
+main h2
+{
+    font-family: tahoma;
+    padding-top: 1%;
+}
+
+main ul
+{
+    padding-left:2%;
+    text-align: left;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #6b2ddd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #7e39ff;
+}
+
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #102e4a;
+    color: white;
+    text-align: center;
+  }
+  table
+  {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left:auto;
+    margin-bottom: 2.5%;
+  }
+  table, th, td
+  {
+    border: 1px solid gray;
+    border-collapse: collapse;
+  }
+
+  #container
+  {
+    background-image: url("../imgs/trams/solaris-tramino_olsztyn.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #55c1ff;
+  }
+
+  #main
+  {
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    width:60%;
+  }
+
+  #date
+  {
+    position: fixed;
+    top: 0;
+    right: 5%;
+    width:256px;
+    height:128px;
+    background-color: #102e4a;
+    border-radius: 24px;
+    margin-top:1%;
+  }
+
+#watch
+{
+  font-family: tahoma;
+  font-size: 175%;
+  text-align: center;
+  color: white;
+  padding-top: 15%;
+}
+
+#info
+{
+  position:absolute;
+  left: 0;
+  width:100%;
+  color:rgb(235, 213, 52);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.text-left
+{
+  position: absolute;
+  margin-right: 1%;
+  top:0;
+  right:0;
+}
+
+.text-left:hover
+{
+  cursor: pointer;
+}
+
+.hidden
+{
+  display:none;
+}
+.visible
+{
+  display:block;
+}
+
+  .active
+  {
+    background-color: #a682ff;
+  }
+  .gallery
+  {
+    margin-left:7.5%;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .image
+  {
+    padding:1%;
+  }
+  .image img
+  {
+    width:295px;
+    height:250px;
+  }
+
+  img
+  {
+    border-style: dashed;
+    border-width:2px;
+    border-color: #102e4a;
+  }
+  .font-tahoma
+  {
+    font-family: tahoma;
+  }
+
+  .center
+{
+  margin: auto;
+}
+.center-img
+{
+  margin: auto;
+  width:50%;
+}
+
+.center-img img
+{
+  display:block;
+  width: 80%;
+  height:80%;
+}
+  .test-block
+  {
+    width: 200px;
+    border: 2px solid rgba(71, 236, 30, 1);
+    background: rgba(71, 236, 30, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select:none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
