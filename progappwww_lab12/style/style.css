@@ -1,0 +1,407 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:Monaco;
+}
+
+hr{
+  border: 10px solid rgb(15, 71, 97);
+  border-radius: 5px;
+}
+
+main a
+{
+  font-size:150%;
+  text-decoration: none;
+}
+
+main a:link
+{
+  color: white;
+}
+
+main a:visited
+{
+  color: white;
+}
+nav
+{
+  position: sticky;
+  top:0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #715aff;
+  }
+  
+nav  li {
+    float: left;
+  }
+  
+nav  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+nav  li a:hover {
+    background-color: #a682ff;
+  }
+
+main
+  {
+    color:white;
+    font-size:125%;
+    padding:2%;
+    background-color: rgba(88, 135, 255, 0.9);
+    font-family: tahoma;
+  }
+main h1
+{
+  margin-top:2.5%;
+    font-family: tahoma;
+    text-align: center;
+}
+main h2
+{
+    font-family: tahoma;
+    padding-top: 1%;
+}
+
+main ul
+{
+    padding-left:2%;
+    text-align: left;
+}
+
+input[type=text], select, textarea{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="file"] {
+  background-color: #6b2ddd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  width:100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Style the date picker arrow in Chrome */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Style the date picker arrow in Firefox */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Style the date picker arrow in Edge and IE */
+input[type="date"]::-ms-clear {
+  display: none;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #6b2ddd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #7e39ff;
+}
+
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #102e4a;
+    color: white;
+    text-align: center;
+  }
+  table
+  {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left:auto;
+    margin-bottom: 2.5%;
+  }
+  table, th, td
+  {
+    border-collapse: collapse;
+  }
+
+  #container
+  {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../imgs/trams/solaris-tramino_olsztyn.jpg"), url("../imgs/buses/man-lion\'s-city-g_olsztyn.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #55c1ff;
+  }
+
+  #main {
+    padding-top: 0.5%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  #date
+  {
+    position: fixed;
+    top: 0;
+    right: 5%;
+    width:256px;
+    height:128px;
+    background-color: #102e4a;
+    border-radius: 24px;
+    margin-top:1%;
+  }
+
+#watch
+{
+  font-family: tahoma;
+  font-size: 175%;
+  text-align: center;
+  color: white;
+  padding-top: 15%;
+}
+
+#info
+{
+  position:absolute;
+  left: 0;
+  width:100%;
+  color:rgb(235, 213, 52);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.text-left
+{
+  position: absolute;
+  margin-right: 1%;
+  top:0;
+  right:0;
+}
+
+.text-left:hover
+{
+  cursor: pointer;
+}
+
+.hidden
+{
+  display:none;
+}
+.visible
+{
+  display:block;
+}
+
+  .active
+  {
+    background-color: #a682ff;
+  }
+  .gallery
+  {
+    margin-left:7.5%;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .image
+  {
+    padding:1%;
+  }
+  .image img
+  {
+    width:295px;
+    height:250px;
+  }
+
+  img
+  {
+    border-style: dashed;
+    border-width:2px;
+    border-color: #102e4a;
+  }
+  .font-tahoma
+  {
+    font-family: tahoma;
+  }
+
+  .center
+{
+  margin: auto;
+}
+.center-img
+{
+  margin: auto;
+  width:50%;
+}
+
+.center-img img
+{
+  display:block;
+  width: 80%;
+  height:80%;
+}
+  .test-block
+  {
+    width: 200px;
+    border: 2px solid rgba(71, 236, 30, 1);
+    background: rgba(71, 236, 30, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select:none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  #cart:hover
+  {
+    cursor:pointer;
+  }
+  #close-cart-mark
+  {
+    display:none;
+    position: absolute;
+    right:22%;
+  }
+
+  #close-cart-mark:hover
+{
+  cursor: pointer;
+}
+
+  #cart-container
+  {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 50px;
+  }
+  #cart-menu
+  {
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    display:none;
+    padding:3%;
+    width:50%;
+    position:absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: rgba(39, 39, 39, 0.5);
+    backdrop-filter: blur(15px);
+  }
+  #cart-menu   table, th, td
+  {
+    margin-top:1%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  #cart-menu tr
+  {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  #cart-menu tr:nth-child(even)
+  {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  #cart-menu tr:last-child
+  {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+
+  #cart-menu table td
+  {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .button-add {
+    transition: background-color 0.5s ease;
+    border-radius: 8px;
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button-add:hover
+  {
+    cursor:pointer;
+    background-color: #06d388; /* Green */
+  }
+  .button-remove {
+    transition: background-color 0.5s ease;
+    margin:5%;
+    border-radius: 8px;
+    background-color: #df1c1c; /* Green */
+    border: none;
+    color: white;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+  }
+  .button-remove:hover
+  {
+    cursor:pointer;
+    background-color: #f71414; /* Green */
+  }
+  .right
+  {
+    margin-left:70%;
+    margin-bottom: 1%;
+  }
+
